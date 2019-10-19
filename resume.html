@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="makeUp.css" />
+
+
+</head>
+  <body>
+    
+
+    <div class="head-resume">
+      <h1>Resume</h1>
+    </div>
+
+    <div id="resumebg">
+
+      <div id="imgBg" class="image">
+        <img
+          src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.0-9/70699364_2426608017422685_7389092449349533696_n.jpg?_nc_cat=110&_nc_oc=AQmb3CteUx311vqQBQ3YtL6Lo0-ObQ30_rowv3LXPQ9-nFvBi8-FNUEiicKDVfYelGI&_nc_ht=scontent.fbkk10-1.fna&oh=d4e51b71ac23eaa1992f2d58fc624345&oe=5E169E21"
+        />
+        
+      </div>
+      <div class="show-resume">
+
+        
+        <div class="personal">
+          <h2>ประวัติส่วนตัว</h2>
+<ul>
+            <span class="topic">ชื่อ - สกุล: </span>
+            <span id="Fullname">Tanyasiri Polsawai</span>
+            <br />
+            <span class="topic">ชื่อเล่น : </span>
+            <span id="Nickname">Maprang</span>
+            <br />
+            <span class="topic">Email : </span>
+            <span id="Email">tanyasiri_p@kkumail.com</span
+            ><br />
+</ul>
+        </div>
+
+        <div class="education">
+          <h2>การศึกษา</h2>
+<ul>
+            <span class="topic">มหาวิทยาลัย : </span>
+            <span id="University">Khon Kean University, Nongkhai Campus</span
+            ><br />
+            <span class="topic">คณะ : </span>
+            <span id="Faculty">Applied Science and Engineering</span>
+            <br />
+            <span class="topic">สาขา : </span>
+            <span id="Major">Computer and Information Science</span>
+            <br />
+</ul>
+        </div>
+
+        <div class="abilities">
+          <h2>ความสามารถ</h2>
+<ol>
+          <li class="topic"><span id="skill1">Coding</li>
+            <li class="topic"><span id="skill2">Drawing</li>
+</ol>
+        </div>
+        <h3 onclick="iresume()" style="margin: 15px 350px 15px 20px; float:right">- - - [Click To input your resume] - - -</h3>
+      </div>
+    </div>
+
+    <div class="i-resume-bg" id="inputresame">
+      <h1>Input your Resume </h1>
+      <div class="input-resume">
+        <div class="i-personal">
+          <h2>ประวัติส่วนตัว</h2>
+<ul>
+            <span class="topic">ชื่อ - สกุล: </span>
+            <input type="text" id="iFullname" value="Tanyasiri Polsawai"/><br />
+            <span class="topic">ชื่อเล่น  : </span>
+            <input type="text" id="iNickname" value="Maprang"/>
+        <br />  
+    </ul></div>
+
+        
+
+        <div class="i-abilities">
+          <h2>ความสามารถ</h2>
+<ol>
+    <li class="topic"><input id="iSkill1" disabled></li>
+    <li class="topic"><input id="iSkill2" disabled></li>
+</ol>
+<button onclick="add()"style="margin: 15px 5px 15px 20px; float: left;">Add</button>
+          <button onclick="del()" style="margin: 15px 5px; float: left;">Delete</button>
+        </div>
+
+<div>
+  
+<button style="margin: 15px 190px ; float: right;"
+  onclick="changeColor()"> Change color
+</button>
+
+
+<button style="margin: 15px 20px; float: left;"
+  onclick="submit()"> Submit
+</button> 
+</div>
+<div class="btn-color" style="margin: 15px 50px; float: right">
+    <button style="margin: 15px 20px; float: right;" id="turnRed">Red
+    </button>
+    <button style="margin: 15px 20px; float: right;" id="turnYellow">Yellow
+    </button>
+    <button style="margin: 15px 20px; float: right;" id="turnBlue">Blue
+    </button>
+    <button style="margin: 15px 20px; float: right;" id="turnGray">Gray
+    </button></button></div>
+
+      </div>
+    </div>
+    <script src="resumeFunction.js"></script>
+  </body>
+</html>
